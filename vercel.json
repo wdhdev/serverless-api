@@ -1,8 +1,8 @@
 {
     "redirects": [
         {
-            "source": "/(.*)",
-            "destination": "/api/:path*"
+            "source": "/:slug",
+            "destination": "/api/:slug"
         }
     ]
 }
