@@ -17,6 +17,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
             } catch(err) {
                 res.status(500).json({ message: err.message, code: "INTERNAL_SERVER_ERROR" });
             }
+
+            break;
         default:
             res.status(405).send({ message: "Method not allowed.", code: "METHOD_NOT_ALLOWED" });
     }
